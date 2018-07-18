@@ -1,7 +1,7 @@
 {
   "name": "bakalov_hotel_react",
   "proxy": "http://localhost:6000/",
-  "secure":false,
+  "secure": false,
   "version": "0.1.0",
   "private": true,
   "dependencies": {
