@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b673459-c4df-43ae-9b15-8a9ee88963ee" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-5.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-3.jpg" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html" />
-      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" />
-      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html" />
       <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" afterPath="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" />
-      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/_gallery-detail-image-1.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-1.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-1.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-1.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-2.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-2.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-4.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-4.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-1.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-1.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-2.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-2.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-3.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-3.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-4.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-4.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-5.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-5.jpg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,8 +36,8 @@
       <file leaf-file-name="demo-hotel-gallery.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-gallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="432" column="89" lean-forward="false" selection-start-line="432" selection-start-column="89" selection-end-line="432" selection-end-column="89" />
+            <state relative-caret-position="463">
+              <caret line="258" column="81" lean-forward="false" selection-start-line="258" selection-start-column="81" selection-end-line="258" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -739,8 +713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-gallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="432" column="89" lean-forward="false" selection-start-line="432" selection-start-column="89" selection-end-line="432" selection-end-column="89" />
+        <state relative-caret-position="463">
+          <caret line="258" column="81" lean-forward="false" selection-start-line="258" selection-start-column="81" selection-end-line="258" selection-end-column="81" />
           <folding />
         </state>
       </provider>
