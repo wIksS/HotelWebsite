@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b673459-c4df-43ae-9b15-8a9ee88963ee" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-5.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-3.jpg" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html" />
+      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" />
+      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html" />
       <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" afterPath="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/_gallery-detail-image-1.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-1.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-1.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-1.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-2.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-2.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-4.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-4.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-1.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-1.jpg" />
       <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-2.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-2.jpg" />
       <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-3.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-3.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-4.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-4.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-5.jpg" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/house/gallery-detail-image-5.jpg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,61 +49,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9418">
-              <caret line="559" column="14" lean-forward="false" selection-start-line="543" selection-start-column="54" selection-end-line="559" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="demo-hotel-location.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-location.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6851">
+            <state relative-caret-position="0">
               <caret line="403" column="27" lean-forward="false" selection-start-line="403" selection-start-column="27" selection-end-line="403" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo-hotel-gallery.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="demo-hotel-gallery.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-gallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="531" column="68" lean-forward="false" selection-start-line="531" selection-start-column="52" selection-end-line="531" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/public/js/custom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme.init.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/public/js/theme.init.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1275">
-              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/public/js/theme.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3028">
-              <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+            <state relative-caret-position="259">
+              <caret line="432" column="89" lean-forward="false" selection-start-line="432" selection-start-column="89" selection-end-line="432" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -107,6 +91,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/client/node_modules/react-scripts/config/webpack.config.dev.js" />
+        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html" />
+        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-5.html" />
+        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" />
+        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html" />
+        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" />
       </list>
     </option>
@@ -158,6 +147,13 @@
               <item name="hotel" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hotel" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
@@ -231,6 +227,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="webpack.config.dev.js&#9;FILE&#9;file://D:/bakalov/hotel/client/node_modules/react-scripts/config/webpack.config.dev.js&#10;webpack-&#9;FILE&#9;file://D:/bakalov/hotel/client/node_modules/webpack-dev-server/bin/webpack-dev-server.js" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\bakalov\hotel\client\public\ajax" />
+      <recent name="D:\bakalov\hotel\client\public\img\demos\church\gallery\sanatorium" />
+      <recent name="D:\bakalov\hotel\client\public\img\demos\church\gallery\procedures" />
+      <recent name="D:\bakalov\hotel\client\public\img\demos\church\gallery\pool" />
+      <recent name="D:\bakalov\hotel\client\public\img\demos\church\gallery" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\bakalov\hotel\client\public\img\demos\church\gallery\hause" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -355,10 +363,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15375587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15375587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22493887" sideWeight="0.49881798" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08568075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2292176" sideWeight="0.501182" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -373,7 +382,6 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Black Caiman" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08585056" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -390,27 +398,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/containers/HotelDescriptionAdminWrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/containers/HotelOverviewAdminWrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -471,13 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/HotelOverview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -661,7 +641,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9418">
+        <state relative-caret-position="0">
           <caret line="559" column="14" lean-forward="false" selection-start-line="543" selection-start-column="54" selection-end-line="559" selection-end-column="14" />
           <folding />
         </state>
@@ -669,24 +649,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-location.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6851">
+        <state relative-caret-position="0">
           <caret line="403" column="27" lean-forward="false" selection-start-line="403" selection-start-column="27" selection-end-line="403" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-gallery.html">
+    <entry file="file://$PROJECT_DIR$/client/public/js/theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="531" column="68" lean-forward="false" selection-start-line="531" selection-start-column="52" selection-end-line="531" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-3028">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -699,10 +671,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/js/theme.js">
+    <entry file="file://$PROJECT_DIR$/client/public/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3028">
-          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/HotelOverview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="432" column="89" lean-forward="false" selection-start-line="432" selection-start-column="89" selection-end-line="432" selection-end-column="89" />
           <folding />
         </state>
       </provider>
