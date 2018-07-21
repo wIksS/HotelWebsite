@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b673459-c4df-43ae-9b15-8a9ee88963ee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/pool/gallery-detail-image-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/procedures/gallery-detail-image-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/img/demos/church/gallery/sanatorium/gallery-detail-image-3.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,11 +49,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo-church-gallery-ajax-on-page-3.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="demo-church-gallery-ajax-on-page-3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state>
               <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo-church-gallery-ajax-on-page-4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="734">
+              <caret line="127" column="10" lean-forward="true" selection-start-line="127" selection-start-column="10" selection-end-line="127" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo-church-gallery-ajax-on-page-1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo-church-gallery-ajax-on-page-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1037">
+              <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -72,11 +103,11 @@
       <list>
         <option value="$PROJECT_DIR$/client/node_modules/react-scripts/config/webpack.config.dev.js" />
         <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-5.html" />
-        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" />
-        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html" />
-        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" />
         <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html" />
+        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html" />
+        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" />
+        <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html" />
       </list>
     </option>
   </component>
@@ -636,23 +667,6 @@
     <entry file="file://$PROJECT_DIR$/client/public/img/demos/church/gallery/gallery-detail-image-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-gallery.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
@@ -660,10 +674,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state>
           <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="127" column="10" lean-forward="true" selection-start-line="127" selection-start-column="10" selection-end-line="127" selection-end-column="10" />
         </state>
       </provider>
     </entry>
