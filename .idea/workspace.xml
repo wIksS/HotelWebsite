@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b673459-c4df-43ae-9b15-8a9ee88963ee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-hotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-hotel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-location.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-rooms-rates-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-rooms-rates-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-rooms-rates.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-rooms-rates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-special-offers.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-special-offers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-book.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +32,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo-hotel-gallery.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="demo-hotel-gallery.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-gallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
+            <state relative-caret-position="2554">
               <caret line="262" column="57" selection-start-line="262" selection-start-column="57" selection-end-line="262" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo-hotel-book.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-book.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="744">
+              <caret line="556" column="25" selection-start-line="556" selection-start-column="25" selection-end-line="556" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -68,8 +71,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="136" column="57" lean-forward="true" selection-start-line="116" selection-start-column="52" selection-end-line="136" selection-end-column="57" />
+            <state relative-caret-position="615">
+              <caret line="530" column="25" lean-forward="true" selection-start-line="497" selection-start-column="16" selection-end-line="530" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -121,6 +124,7 @@
         <option value="$PROJECT_DIR$/client/public/demo-hotel-hotel.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-rooms-rates.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" />
+        <option value="$PROJECT_DIR$/client/public/demo-hotel-book.html" />
       </list>
     </option>
   </component>
@@ -388,13 +392,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/helpers/inputHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seed.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -666,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="136" column="57" lean-forward="true" selection-start-line="116" selection-start-column="52" selection-end-line="136" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-location.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
@@ -710,8 +700,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-gallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
+        <state relative-caret-position="2554">
           <caret line="262" column="57" selection-start-line="262" selection-start-column="57" selection-end-line="262" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="530" column="25" lean-forward="true" selection-start-line="497" selection-start-column="16" selection-end-line="530" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="556" column="25" selection-start-line="556" selection-start-column="25" selection-end-line="556" selection-end-column="25" />
         </state>
       </provider>
     </entry>
