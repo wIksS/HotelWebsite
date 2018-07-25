@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b673459-c4df-43ae-9b15-8a9ee88963ee" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/api/controllers/hotelRatesController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/hotelRatesModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/routes/hotelRatesRoutes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/actions/hotelRates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/HotelRates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/HotelRatesAdmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/containers/HotelRatesAdminWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/containers/HotelRatesWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/reducers/hotelRates.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-house-rates.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-house-rates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-rooms-rates.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-rooms-rates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/indexoldnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/indexoldnew.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/const.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/const.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seed.js" beforeDir="false" afterPath="$PROJECT_DIR$/seed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/demo-hotel-location.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/demo-hotel-location.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="demo-hotel-location.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="demo-hotel-location.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-location.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="252" selection-start-line="252" selection-end-line="252" />
+            <state relative-caret-position="67">
+              <caret line="248" column="52" selection-start-line="248" selection-start-column="52" selection-end-line="248" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -61,22 +46,10 @@
       <file leaf-file-name="HotelRates.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/HotelRates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="480">
               <caret line="32" column="49" selection-start-line="30" selection-start-column="42" selection-end-line="32" selection-end-column="49" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HotelRatesAdminWrapper.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/containers/HotelRatesAdminWrapper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,6 +63,15 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="517" selection-start-line="517" selection-end-line="518" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -115,16 +97,16 @@
       <file leaf-file-name="demo-hotel-house-rates.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-house-rates.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="432">
               <caret line="369" column="57" selection-start-line="369" selection-start-column="57" selection-end-line="369" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HotelRatesAdmin.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HotelRatesAdmin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/HotelRatesAdmin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
+            <state relative-caret-position="1531">
               <caret line="120" column="72" selection-start-line="120" selection-start-column="72" selection-end-line="120" selection-end-column="72" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -159,6 +141,8 @@
       <find>reducers</find>
       <find>debu</find>
       <find>class=&quot;nav-link&quot;</find>
+      <find>map</find>
+      <find>1234</find>
     </findStrings>
     <replaceStrings>
       <replace>demo-hotel-house-rates-detail.html</replace>
@@ -180,11 +164,9 @@
         <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-2.html" />
         <option value="$PROJECT_DIR$/client/public/ajax/demo-church-gallery-ajax-on-page-4.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-gallery.html" />
-        <option value="$PROJECT_DIR$/client/public/index.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-rooms-rates-detail.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-special-offers.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-hotel.html" />
-        <option value="$PROJECT_DIR$/client/public/demo-hotel-location.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-house-rates-detail.html" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-book.html" />
         <option value="$PROJECT_DIR$/helpers/const.js" />
@@ -204,6 +186,8 @@
         <option value="$PROJECT_DIR$/client/src/components/HotelRates.js" />
         <option value="$PROJECT_DIR$/client/public/demo-hotel-house-rates.html" />
         <option value="$PROJECT_DIR$/client/src/components/HotelRatesAdmin.js" />
+        <option value="$PROJECT_DIR$/client/public/index.html" />
+        <option value="$PROJECT_DIR$/client/public/demo-hotel-location.html" />
       </list>
     </option>
   </component>
@@ -425,12 +409,12 @@
       <workItem from="1528726972972" duration="620000" />
       <workItem from="1531943205876" duration="2389000" />
       <workItem from="1532276675417" duration="239000" />
-      <workItem from="1532356307355" duration="15739000" />
+      <workItem from="1532356307355" duration="18199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15978000" />
+    <option name="totallyTimeSpent" value="18438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
@@ -546,13 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4455">
           <caret line="297" column="26" selection-start-line="297" selection-start-column="26" selection-end-line="297" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4950">
-          <caret line="330" column="26" selection-start-line="330" selection-start-column="26" selection-end-line="330" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -792,13 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-location.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="252" selection-start-line="252" selection-end-line="252" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-rooms-rates.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -823,16 +793,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/HotelRatesAdmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1531">
+          <caret line="120" column="72" selection-start-line="120" selection-start-column="72" selection-end-line="120" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-house-rates.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="432">
           <caret line="369" column="57" selection-start-line="369" selection-start-column="57" selection-end-line="369" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/HotelRates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="480">
           <caret line="32" column="49" selection-start-line="30" selection-start-column="42" selection-end-line="32" selection-end-column="49" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -840,13 +820,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/HotelRatesAdmin.js">
+    <entry file="file://$PROJECT_DIR$/client/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="120" column="72" selection-start-line="120" selection-start-column="72" selection-end-line="120" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="517" selection-start-line="517" selection-end-line="518" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/demo-hotel-location.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="248" column="52" selection-start-line="248" selection-start-column="52" selection-end-line="248" selection-end-column="52" />
         </state>
       </provider>
     </entry>

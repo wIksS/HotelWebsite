@@ -227,7 +227,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 text-center">
-								<h1 class="font-weight-bold text-light text-uppercase">Hotel Location <span>In the Heart of Porto</span></h1>
+								<h1 class="font-weight-bold text-light text-uppercase">Локация на комплекса <span>в сърцето на розовата долина</span></h1>
 							</div>
 						</div>
 					</div>
@@ -240,13 +240,13 @@
 					<div class="macro-map-info">
 						<div class="macro-map-info-detail">
 							<i class="icon-location-pin icons text-color-primary mt-3"></i>
-							<label>address</label>
-							<strong>1234 Street Name, Porto, Envato</strong>
+							<label>Адрес</label>
+							<strong>гр.Баня, област Карложо, ул.Лепите 22А</strong>
 						</div>
 						<div class="macro-map-info-detail">
 							<i class="icon-phone icons text-color-primary mt-3"></i>
-							<label>call us</label>
-							<strong>(800) 1234-5678</strong>
+							<label>Обадете ни се</label>
+							<strong>(+359) 893491110</strong>
 						</div>
 					</div>
 				</div>
@@ -363,12 +363,16 @@
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
 
-		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7oJUYSBynHX9ziA0e1W-46RHRGpc6j3A"></script>
 		<script>
+            // Map Initial Location
+            var initLatitude = 42.5421619;
+            var initLongitude = 24.833241;
 
 			// Map Markers
 			var mapMarkers = [{
-				address: "New York, NY 10017",
+                latitude: initLatitude,
+                longitude: initLongitude,
 				icon: {
 					image: "img/pin.png",
 					iconsize: [26, 46],
@@ -376,9 +380,7 @@
 				}
 			}];
 
-			// Map Initial Location
-			var initLatitude = 42.537258;
-			var initLongitude = 24.842680;
+
 
 			$('#googleMapsMacro').gMap({
 				controls: {
