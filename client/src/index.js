@@ -13,6 +13,9 @@ import HotelDescriptionAdminWrapper from "./containers/HotelDescriptionAdminWrap
 import HotelDescriptionWrapper from "./containers/HotelDescriptionWrapper";
 import HotelOverviewAdminWrapper from "./containers/HotelOverviewAdminWrapper";
 import HotelOverviewWrapper from "./containers/HotelOverviewWrapper";
+import HotelRatesWrapper from "./containers/HotelRatesWrapper";
+import HotelRatesAdminWrapper from "./containers/HotelRatesAdminWrapper";
+import {fetchHotelRates} from "./actions/hotelRates";
 
 const loggerMiddleware = createLogger()
 
@@ -24,6 +27,7 @@ const store = createStore(app,
 
 store.dispatch(fetchHotelDescription());
 store.dispatch(fetchHotelOverview());
+store.dispatch(fetchHotelRates());
 
 if (document.getElementById('hotel-description')) {
     render(
@@ -36,6 +40,20 @@ if (document.getElementById('hotel-description')) {
             </HashRouter>
         </Provider>,
         document.getElementById('hotel-description')
+    )
+}
+
+if (document.getElementById('hotel-rates')) {
+    render(
+        <Provider store={store}>
+            <HashRouter>
+                <Switch>
+                    <Route path='/administration' component={HotelRatesAdminWrapper}/>
+                    <Route path='/' component={HotelRatesWrapper}/>
+                </Switch>
+            </HashRouter>
+        </Provider>,
+        document.getElementById('hotel-rates')
     )
 }
 

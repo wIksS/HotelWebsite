@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser= require('body-parser');
 require('./api/models/hotelDescriptionModel');
 require('./api/models/hotelOverviewModel');
+require('./api/models/hotelRatesModel');
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://admin:qwerty123456@ds131989.mlab.com:31989/bakalov_hotel')
@@ -14,6 +15,8 @@ mongoose.connect('mongodb://admin:qwerty123456@ds131989.mlab.com:31989/bakalov_h
         console.log('Dadatabase connection error: ',err);
 
     });
+
+console.log("Obicham qna!");
 
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -26,9 +29,11 @@ const port = process.env.PORT || 6000;
 
 const hotelDescriptionRoutes = require('./api/routes/hotelDescriptionRoutes');
 const hotelOverviewRoutes = require('./api/routes/hotelOverviewRoutes');
+const hotelRatesRoutes = require('./api/routes/hotelRatesRoutes');
 
 hotelDescriptionRoutes(app);
 hotelOverviewRoutes(app);
+hotelRatesRoutes(app);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 

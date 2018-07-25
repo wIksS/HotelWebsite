@@ -1,5 +1,7 @@
 const HotelDescription = require('./api/models/hotelDescriptionModel');
-const HotelOverview = require('./api/models/hotelOverviewModel')
+const HotelOverview = require('./api/models/hotelOverviewModel');
+const HotelRates = require('./api/models/hotelRatesModel')
+
 const CONSTS = require('./helpers/const');
 
 let hotelDescription = new HotelDescription({
@@ -30,5 +32,22 @@ hotelOverview.save(function (err, data) {
     }
     else {
         console.log("Seed created hotelOverview");
+    }
+})
+
+let hotelRates = new HotelRates({
+    _id: CONSTS.hotetlRatesId,
+    title: "Title",
+    properties: [{key:"qna",value:"Viktor"},{key:"qna",value:"pesho"}],
+    url:"pesho"
+});
+
+hotelRates.save(function (err, data) {
+    if(err) {
+        console.log(err);
+        console.log("Seed is already ran");
+    }
+    else {
+        console.log("Seed created hotelRates");
     }
 })
