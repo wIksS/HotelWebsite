@@ -2,6 +2,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser= require('body-parser');
+
+const autoIncrement = require('mongoose-auto-increment');
+let db = mongoose.connection;
+autoIncrement.initialize(mongoose.connection);
+
 require('./api/models/hotelDescriptionModel');
 require('./api/models/hotelOverviewModel');
 require('./api/models/hotelRatesModel');
@@ -16,9 +21,6 @@ mongoose.connect('mongodb://admin:qwerty123456@ds131989.mlab.com:31989/bakalov_h
 
     });
 
-console.log("Obicham qna!");
-
-let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 const app = express();

@@ -35,19 +35,23 @@ hotelOverview.save(function (err, data) {
     }
 })
 
-let hotelRates = new HotelRates({
-    _id: CONSTS.hotetlRatesId,
-    title: "Title",
-    properties: [{key:"qna",value:"Viktor"},{key:"qna",value:"pesho"}],
-    url:"pesho"
-});
+HotelRates.count({}, function( err, count){
+    console.log( "Number of rates:", count );
+    if(count <= 0){
+        let hotelRates = new HotelRates({
+            title: "Title",
+            properties: [{key:"qna",value:"Viktor"},{key:"qna",value:"pesho"}],
+            url:"https://res.cloudinary.com/df3euu0sz/image/upload/v1532481656/iomxrfbtffximwmeizta"
+        });
 
-hotelRates.save(function (err, data) {
-    if(err) {
-        console.log(err);
-        console.log("Seed is already ran");
+        hotelRates.save(function (err, data) {
+            if(err) {
+                console.log(err);
+                console.log("Seed is already ran");
+            }
+            else {
+                console.log("Seed created hotelRates");
+            }
+        })
     }
-    else {
-        console.log("Seed created hotelRates");
-    }
-})
+});

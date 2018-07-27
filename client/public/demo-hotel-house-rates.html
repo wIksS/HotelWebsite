@@ -354,23 +354,22 @@
 <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-    window.imageEvent = document.createEvent('Event');
+    window.imageEvent = {};
+    window.runImageUpload = function (index) {
+        window.imageEvent[index] = document.createEvent('Event');
+        document.getElementById("upload_widget_opener" + index).addEventListener("click", function () {
+            $(document).trigger("imageReady" + index, 'test');
 
-    window.runImageUpload = function () {
-        document.getElementById("upload_widget_opener").addEventListener("click", function () {
-            $(document).trigger("imageReady", 'test');
-            console.log('test');
-
-             cloudinary.openUploadWidget({cloud_name: 'df3euu0sz', upload_preset: 'e4qjksvz'},
-                 function (error, result) {
-                     if (error) {
-                         console.log(error);
-                     }
-                     else if (result) {
-                         window.imageEvent.data = result;
-                         window.dispatchEvent(window.imageEvent);
-                     }
-                 });
+            cloudinary.openUploadWidget({cloud_name: 'df3euu0sz', upload_preset: 'e4qjksvz'},
+                function (error, result) {
+                    if (error) {
+                        console.log(error);
+                    }
+                    else if (result) {
+                        window.imageEvent[index].data = result;
+                        window.dispatchEvent(window.imageEvent[index]);
+                    }
+                });
         }, false);
     }
 

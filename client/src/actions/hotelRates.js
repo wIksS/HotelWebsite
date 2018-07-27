@@ -1,6 +1,5 @@
 import 'babel-polyfill'
 import fetch from 'cross-fetch'
-
 export const REQUEST_HOTEL_RATES = 'REQUEST_HOTEL_RATES';
 function requestHotelRates() {
     return {
@@ -36,7 +35,43 @@ export function fetchHotelRates() {
 export function postHotelRates(hotelRates) {
     return dispatch => {
         return fetch(`/api/hotelRates`,{
+            method: 'PUT',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(hotelRates)
+        })
+            .then(
+                response => response.json(),
+                error => console.log('An error occurred.', error)
+            )
+            .then(json => dispatch(receiveHotelRates(json)))
+    }
+}
+
+export function addHotelRates(hotelRates) {
+    return dispatch => {
+        return fetch(`/api/hotelRates`,{
             method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(hotelRates)
+        })
+            .then(
+                response => response.json(),
+                error => console.log('An error occurred.', error)
+            )
+            .then(json => dispatch(receiveHotelRates(json)))
+    }
+}
+
+export function deleteHotelRates(hotelRates) {
+    return dispatch => {
+        return fetch(`/api/hotelRates`,{
+            method: 'DELETE',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',

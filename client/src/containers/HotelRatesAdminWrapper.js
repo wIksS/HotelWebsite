@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import {postHotelRates} from "../actions/hotelRates";
+import {addHotelRates, deleteHotelRates, postHotelRates} from "../actions/hotelRates";
 import HotelRatesAdmin from "../components/HotelRatesAdmin";
 
 function HotelRatesAdminWrapper({hotelOverview}) {
@@ -20,6 +20,12 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         onSubmit: (hotelRates) => {
             dispatch(postHotelRates(hotelRates))
+        },
+        onAddRate: (hotelRates) => {
+            dispatch(addHotelRates(hotelRates))
+        },
+        onDeleteRate: (hotelRates) => {
+            dispatch(deleteHotelRates(hotelRates))
         }
     }
 }
