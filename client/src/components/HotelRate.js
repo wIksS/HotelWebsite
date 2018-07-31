@@ -23,7 +23,7 @@ class HotelRate extends Component {
                     <span className="thumb-info-wrapper">
                       <img src={hotelRates.url} className="img-fluid" alt/>
                       <span className="thumb-info-title">
-                        <span className="thumb-info-inner">View Details</span>
+                        <span className="thumb-info-inner">Вижте детайли</span>
                       </span>
                     </span>
                   </span>
