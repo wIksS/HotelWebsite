@@ -6,7 +6,7 @@ class HotelDescriptionAdmin extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {title: '', subTitle: '', description: ''};
+        this.state = {title: this.props.hotelDescription.title, subTitle: this.props.hotelDescription.subTitle, description: this.props.hotelDescription.description};
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);

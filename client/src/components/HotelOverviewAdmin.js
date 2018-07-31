@@ -7,7 +7,7 @@ class HotelDescriptionAdmin extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {description: '', properties: []};
+        this.state = {description: this.props.hotelOverview.description, properties: this.props.hotelOverview.properties};
 
         this.handleInputChange = inputChangeHandler.bind(this);
         this.handleSubmit = submitHandler.bind(this);
@@ -36,7 +36,7 @@ class HotelDescriptionAdmin extends Component {
         for(let i =0; i< 3;i++){
             let propertiesCols = [];
             for(let j =0; j<3; j++){
-                propertiesCols.push(<li><i className="fas fa-check"></i>
+                propertiesCols.push(<li key={i + ' ' + j}><i className="fas fa-check"></i>
                     <input
                         name={((i*3) + j)}
                         type="text"
@@ -47,7 +47,7 @@ class HotelDescriptionAdmin extends Component {
             }
 
             propertiesRows.push(
-                <div className="col-lg-4">
+                <div key={i} className="col-lg-4">
                     <ul className="list list-icons list-primary list-borders text-uppercase text-color-dark text-2">
                         {propertiesCols}
                     </ul>
