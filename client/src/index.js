@@ -22,6 +22,10 @@ import HotelHouseRatesWrapper from "./containers/HotelHouseRatesWrapper";
 import HotelHouseRatesAdminWrapper from "./containers/HotelHouseRatesAdminWrapper";
 import HotelHouseRateDetailWrapper from "./containers/HotelHouseRateDetailWrapper";
 import HotelHouseRatesDetailAdminWrapper from "./containers/HotelHouseRatesDetailAdminWrapper";
+import HotelBookWrapper from "./containers/HotelBookWrapper";
+import {Provider as AlertProvider} from 'react-alert'
+import AlertTemplate from 'react-alert-template-basic'
+
 
 const loggerMiddleware = createLogger()
 
@@ -35,6 +39,14 @@ store.dispatch(fetchHotelDescription());
 store.dispatch(fetchHotelOverview());
 store.dispatch(fetchHotelRates());
 store.dispatch(fetchHotelHouseRates());
+
+const options = {
+    position: 'bottom right',
+    timeout: 5000,
+    offset: '30px',
+    transition: 'scale',
+    zIndex:100000
+}
 
 window.addEventListener('load', () => {
 
@@ -112,6 +124,21 @@ window.addEventListener('load', () => {
             document.getElementById('about-hotel')
         )
     }
-},false);
+
+    if (document.getElementById('hotel-book')) {
+        render(
+            <AlertProvider template={AlertTemplate} {...options}>
+                <Provider store={store}>
+                    <HashRouter>
+                        <Switch>
+                            <Route path='/' component={HotelBookWrapper}/>
+                        </Switch>
+                    </HashRouter>
+                </Provider>
+            </AlertProvider>,
+            document.getElementById('hotel-book')
+        )
+    }
+}, false);
 
 registerServiceWorker();

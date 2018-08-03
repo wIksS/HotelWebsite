@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 import {inputChangeHandler, submitHandler} from "../helpers/inputHelper";
-import $ from 'jquery'
 
 class HotelRateAdmin extends Component {
 
@@ -18,8 +17,8 @@ class HotelRateAdmin extends Component {
         this.handleInputChange = inputChangeHandler.bind(this);
         this.handleSubmit = submitHandler.bind(this);
         this.handlePropertyChange = this.handlePropertyChange.bind(this);
-    }
 
+    }
 
     handlePropertyChange(event) {
         const target = event.target;
