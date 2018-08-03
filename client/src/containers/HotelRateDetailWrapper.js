@@ -1,14 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import HotelRates from "../components/HotelRates";
+import HotelRateDetail from "../components/HotelRateDetail";
 
 const mapStateToProps = (state, ownProps) => {
     return {
         hotelRates: state.hotelRates.hotelRates,
-        detailsUrl:'demo-hotel-rooms-rates.html#/details/'
     }
 }
 
 export default connect(
     mapStateToProps
-)(HotelRates)
+)(HotelRateDetail)

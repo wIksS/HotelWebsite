@@ -17,11 +17,11 @@ class HotelRate extends Component {
 
         return (
             <div className="col-md-6 col-lg-4 isotope-item rooms mb-4 pb-3">
-                <a href="demo-hotel-house-rates-detail.html">
+                <a href={this.props.detailsUrl + this.props.hotelRateKey}>
                   <span
                       className="thumb-info thumb-info-centered-info thumb-info-no-borders">
                     <span className="thumb-info-wrapper">
-                      <img src={hotelRates.url} className="img-fluid" alt/>
+                      <img src={hotelRates.url} className="img-fluid"/>
                       <span className="thumb-info-title">
                         <span className="thumb-info-inner">Вижте детайли</span>
                       </span>

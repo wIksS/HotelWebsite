@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 const autoIncrement = require('mongoose-auto-increment');
 
-var HotelRatesSchema = new Schema({
+var HotelHouseRatesSchema = new Schema({
     title: {
         type: String,
         required: "This field is required"
@@ -22,7 +22,7 @@ var HotelRatesSchema = new Schema({
     },
 });
 
-HotelRatesSchema.plugin(autoIncrement.plugin, { model: 'HotelRates' });
+HotelHouseRatesSchema.plugin(autoIncrement.plugin, { model: 'HotelHouseRates' });
 
 
-module.exports = mongoose.model('HotelRates', HotelRatesSchema);
+module.exports = mongoose.model('HotelHouseRates', HotelHouseRatesSchema);

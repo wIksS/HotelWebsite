@@ -11,6 +11,7 @@ class HotelRateAdmin extends Component {
             title: this.props.hotelRates.title,
             properties: this.props.hotelRates.properties,
             url: this.props.hotelRates.url,
+            description: this.props.hotelRates.description,
             _id:this.props.hotelRates._id
         };
 

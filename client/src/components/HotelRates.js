@@ -12,7 +12,7 @@ class HotelRates extends Component {
         let hotelRates = this.props.hotelRates;
         let hotelRatesHtml = [];
         for (let i=0; i< hotelRates.length;i++){
-            hotelRatesHtml.push(<HotelRate hotelRates={hotelRates[i]} key={i}/>)
+            hotelRatesHtml.push(<HotelRate hotelRates={hotelRates[i]} key={i} detailsUrl={this.props.detailsUrl} hotelRateKey={i}/>)
         }
 
         return (

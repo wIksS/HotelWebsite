@@ -29,6 +29,7 @@ class HotelRatesAdmin extends Component {
         let hotelRates = {
             title: 'Тип на стая',
             properties: [{key: 'Екстри', value: 'има/няма'}],
+            description:'Това е описанието на стаята',
             url: 'https://res.cloudinary.com/df3euu0sz/image/upload/v1532481656/iomxrfbtffximwmeizta'
         }
 

@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 import {fetchHotelDescription} from './actions/hotelDescription'
 import {fetchHotelOverview} from './actions/hotelOverview'
 import {Provider} from 'react-redux'
-import {BrowserRouter, Switch, Route, HashRouter} from 'react-router-dom'
+import {Switch, Route, HashRouter} from 'react-router-dom'
 import HotelDescriptionAdminWrapper from "./containers/HotelDescriptionAdminWrapper";
 import HotelDescriptionWrapper from "./containers/HotelDescriptionWrapper";
 import HotelOverviewAdminWrapper from "./containers/HotelOverviewAdminWrapper";
@@ -16,6 +16,12 @@ import HotelOverviewWrapper from "./containers/HotelOverviewWrapper";
 import HotelRatesWrapper from "./containers/HotelRatesWrapper";
 import HotelRatesAdminWrapper from "./containers/HotelRatesAdminWrapper";
 import {fetchHotelRates} from "./actions/hotelRates";
+import HotelRateDetailWrapper from "./containers/HotelRateDetailWrapper";
+import {fetchHotelHouseRates} from "./actions/hotelHouseRates";
+import HotelHouseRatesWrapper from "./containers/HotelHouseRatesWrapper";
+import HotelHouseRatesAdminWrapper from "./containers/HotelHouseRatesAdminWrapper";
+import HotelHouseRateDetailWrapper from "./containers/HotelHouseRateDetailWrapper";
+import HotelHouseRatesDetailAdminWrapper from "./containers/HotelHouseRatesDetailAdminWrapper";
 
 const loggerMiddleware = createLogger()
 
@@ -28,6 +34,7 @@ const store = createStore(app,
 store.dispatch(fetchHotelDescription());
 store.dispatch(fetchHotelOverview());
 store.dispatch(fetchHotelRates());
+store.dispatch(fetchHotelHouseRates());
 
 window.addEventListener('load', () => {
 
@@ -45,12 +52,30 @@ window.addEventListener('load', () => {
         )
     }
 
+    if (document.getElementById('hotel-house-rates')) {
+        render(
+            <Provider store={store}>
+                <HashRouter>
+                    <Switch>
+                        <Route path='/administration' component={HotelHouseRatesAdminWrapper}/>
+                        <Route path='/details-house/:id/administration' component={HotelHouseRatesDetailAdminWrapper}/>
+                        <Route path='/details-house/:id' component={HotelHouseRateDetailWrapper}/>
+                        <Route path='/' component={HotelHouseRatesWrapper}/>
+                    </Switch>
+                </HashRouter>
+            </Provider>,
+            document.getElementById('hotel-house-rates')
+        )
+    }
+
     if (document.getElementById('hotel-rates')) {
         render(
             <Provider store={store}>
                 <HashRouter>
                     <Switch>
                         <Route path='/administration' component={HotelRatesAdminWrapper}/>
+                        <Route path='/details/:id/administration' component={HotelHouseRatesDetailAdminWrapper}/>
+                        <Route path='/details/:id' component={HotelRateDetailWrapper}/>
                         <Route path='/' component={HotelRatesWrapper}/>
                     </Switch>
                 </HashRouter>

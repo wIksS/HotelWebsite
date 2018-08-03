@@ -1,6 +1,7 @@
 const HotelDescription = require('./api/models/hotelDescriptionModel');
 const HotelOverview = require('./api/models/hotelOverviewModel');
 const HotelRates = require('./api/models/hotelRatesModel')
+const HotelHouseRates = require('./api/models/hotelHouseRatesModel')
 
 const CONSTS = require('./helpers/const');
 
@@ -41,16 +42,37 @@ HotelRates.count({}, function( err, count){
         let hotelRates = new HotelRates({
             title: "Title",
             properties: [{key:"qna",value:"Viktor"},{key:"qna",value:"pesho"}],
+            description:"Това е описанието на стаята",
             url:"https://res.cloudinary.com/df3euu0sz/image/upload/v1532481656/iomxrfbtffximwmeizta"
         });
 
         hotelRates.save(function (err, data) {
             if(err) {
-                console.log(err);
                 console.log("Seed is already ran");
             }
             else {
                 console.log("Seed created hotelRates");
+            }
+        })
+    }
+});
+
+HotelHouseRates.count({}, function( err, count){
+    console.log( "Number of house rates:", count );
+    if(count <= 0){
+        let hotelRates = new HotelHouseRates({
+            title: "Title",
+            properties: [{key:"qna",value:"Viktor"},{key:"qna",value:"pesho"}],
+            description:"Това е описанието на стаята",
+            url:"https://res.cloudinary.com/df3euu0sz/image/upload/v1532481656/iomxrfbtffximwmeizta"
+        });
+
+        hotelRates.save(function (err, data) {
+            if(err) {
+                console.log("Seed is already ran");
+            }
+            else {
+                console.log("Seed created hotelHouseRates");
             }
         })
     }
