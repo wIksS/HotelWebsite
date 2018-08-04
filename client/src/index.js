@@ -24,16 +24,20 @@ import HotelHouseRateDetailWrapper from "./containers/HotelHouseRateDetailWrappe
 import HotelHouseRatesDetailAdminWrapper from "./containers/HotelHouseRatesDetailAdminWrapper";
 import HotelBookWrapper from "./containers/HotelBookWrapper";
 import {Provider as AlertProvider} from 'react-alert'
-import AlertTemplate from 'react-alert-template-basic'
+import AlertTemplate from 'react-alert-template-basic';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+
 
 
 const loggerMiddleware = createLogger()
 
-const store = createStore(app,
+const store = createStore(app, composeWithDevTools(
     applyMiddleware(
         thunkMiddleware,
         loggerMiddleware
-    ))
+    )
+))
 
 store.dispatch(fetchHotelDescription());
 store.dispatch(fetchHotelOverview());
