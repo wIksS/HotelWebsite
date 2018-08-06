@@ -34,11 +34,13 @@ const hotelDescriptionRoutes = require('./api/routes/hotelDescriptionRoutes');
 const hotelOverviewRoutes = require('./api/routes/hotelOverviewRoutes');
 const hotelRatesRoutes = require('./api/routes/hotelRatesRoutes');
 const hotelHouseRatesRoutes = require('./api/routes/hotelHouseRatesRoutes');
+const mailSenderRoutes = require('./api/routes/mailSenderRoutes');
 
 hotelDescriptionRoutes(app);
 hotelOverviewRoutes(app);
 hotelRatesRoutes(app);
 hotelHouseRatesRoutes(app);
+mailSenderRoutes(app);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 

@@ -2,55 +2,91 @@ import React, {Component} from 'react';
 import {inputChangeHandler, submitHandler} from "../helpers/inputHelper";
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
-import { withAlert } from 'react-alert'
+import {withAlert} from 'react-alert'
 
 import 'react-datepicker/dist/react-datepicker.css';
+import queryString from 'query-string'
 
 import '../index.css'
 
 class HotelBook extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        const parsed = queryString.parse(window.location.search);
+        let arriveDate = parsed.arriveDate? moment(parsed.arriveDate,'DD/MM/YYYY') : moment();
+        let departureDate = parsed.departureDate? moment(parsed.departureDate,'DD/MM/YYYY') : moment();
+        let kids = parsed.kids || 0;
+        let adults = parsed.adults || 0;
 
         this.state = {
             selected: {},
             name: '',
             phone: '',
-            arriveDate: moment(),
-            departureDate: moment(),
-            adults: 0,
-            kids: 0,
-            agree:false
+            arriveDate: arriveDate,
+            departureDate: departureDate,
+            adults: adults,
+            kids: kids,
+            agree: false,
+            isArriveSelected: false,
+            isDepartureSelected: false,
+            isDisabled: false
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleArriveChange = this.handleArriveChange.bind(this);
         this.handleDepartureChange = this.handleDepartureChange.bind(this);
         this.sendEmail = this.sendEmail.bind(this);
+        this.isSent = false;
     }
 
     handleInputChange = inputChangeHandler.bind(this);
 
-    sendEmail(event){
-        if(!this.state.phone){
-            this.props.alert.error('Моля добавете телефонния си номер');
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.mail.result && !this.isSent) {
+            this.props.alert.success('Запитването е изпратено. Очаквайте обаждане.');
+            this.setState({isDisabled: true});
+            this.isSent = true;
         }
-        else if(Object.keys(this.state.selected).length === 0){
+    }
+
+    sendEmail(event) {
+        event.preventDefault();
+
+        let isValid = true;
+        if (!this.state.phone) {
+            this.props.alert.error('Моля добавете телефонния си номер');
+            isValid = false;
+        }
+        else if (Object.keys(this.state.selected).length === 0) {
             this.props.alert.error('Моля изберете стая');
+            isValid = false;
+        }
+        else if (!this.state.agree) {
+            this.props.alert.error('Моля съгласете се с общите условия');
+            isValid = false;
+        }
+        // if(!this.state.isArriveSelected || !this.state.isDepartureSelected){
+        //     this.props.alert.error('Моля изберете начална и крайна дата');
+        //     isValid= false;
+        // }
+
+        if (isValid) {
+            this.props.onSubmit(this.state);
         }
 
-        event.preventDefault();
     }
 
     handleArriveChange(date) {
         this.setState({
-            arriveDate: date
+            arriveDate: date,
+            isArriveSelected: true
         });
     }
 
     handleDepartureChange(date) {
         this.setState({
-            departureDate: date
+            departureDate: date,
+            isDepartureSelected: true
         });
     }
 
@@ -172,7 +208,7 @@ class HotelBook extends Component {
                                 <div className="form-group col">
                                     <div className="form-control-custom">
                                         <select className="form-control text-uppercase text-2" name="adults"
-                                                data-msg-required="This field is required." id="adults" required
+                                                id="adults"
                                                 onChange={this.handleInputChange} value={this.state.adults}>
                                             <option value>Възрастни</option>
                                             <option value={1}>1</option>
@@ -187,10 +223,9 @@ class HotelBook extends Component {
                                 <div className="form-group col">
                                     <div className="form-control-custom">
                                         <select className="form-control text-uppercase text-2" name="kids"
-                                                data-msg-required="This field is required." id="kids" required
+                                                id="kids"
                                                 onChange={this.handleInputChange} value={this.state.kids}>
                                             <option value>Деца</option>
-                                            <option value={1}>0</option>
                                             <option value={1}>1</option>
                                             <option value={2}>2</option>
                                             <option value={3}>3</option>
@@ -236,7 +271,8 @@ class HotelBook extends Component {
                             <div className="form-row">
                                 <div className="form-group col">
                                     <label htmlFor="phone" className="form-control-label">Телефон за контакт</label>
-                                    <input type="number" placeholder={'088 888 888'} onChange={this.handleInputChange } value={this.state.phone}
+                                    <input type="number" placeholder={'088 888 888'} onChange={this.handleInputChange}
+                                           value={this.state.phone}
                                            className="form-control" id="phone"
                                            name="phone"/>
                                 </div>
@@ -252,7 +288,7 @@ class HotelBook extends Component {
                         </section>
                         <div className="row">
                             <div className="col">
-                                <input type="submit" defaultValue="Изпрати запитване"
+                                <input type="submit" defaultValue="Изпрати запитване" disabled={this.state.isDisabled}
                                        className="btn btn-primary btn-lg btn-block text-uppercase p-4 mb-4"/>
                             </div>
                         </div>
@@ -261,7 +297,8 @@ class HotelBook extends Component {
                                 <div className="col-sm-12">
                                     <div className="form-group">
                                         <div><label htmlFor="agree">Съгласие за обработка на лични данни</label></div>
-                                        <input name="agree" id="agree" type="checkbox" onChange={this.handleInputChange}/> Прочетох и разбрах
+                                        <input name="agree" id="agree" type="checkbox"
+                                               onChange={this.handleInputChange}/> Прочетох и разбрах
                                         записаното в Общите условия за ползване на dekom.bg. Потвърждавам, че съм
                                         съгласен/на личните ми данни да бъдат обработвани, по описания в документа начин
                                         и за целите посочени в него.

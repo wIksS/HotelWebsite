@@ -5,7 +5,7 @@ import HotelRates from "../components/HotelRates";
 const mapStateToProps = (state, ownProps) => {
     return {
         hotelRates: state.hotelHouseRates.hotelHouseRates,
-        detailsUrl:'demo-hotel-house-rates.html#/details-house/'
+        detailsUrl:'hotel-house-rates.html#/details-house/'
     }
 }
 

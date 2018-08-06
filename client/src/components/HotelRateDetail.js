@@ -36,7 +36,7 @@ class HotelRateDetail extends Component {
                                         <ul>
                                             {propertiesHtml}
                                             <li>
-                                                <a href="demo-hotel-book.html" className="btn btn-primary btn-lg text-2 text-uppercase mt-2 room-suite-info-book-now"title>Резервирайте сега</a>
+                                                <a href="hotel-book.html" className="btn btn-primary btn-lg text-2 text-uppercase mt-2 room-suite-info-book-now"title>Резервирайте сега</a>
                                             </li>
                                         </ul>
                                     </div>

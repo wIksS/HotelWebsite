@@ -26,9 +26,8 @@ import HotelBookWrapper from "./containers/HotelBookWrapper";
 import {Provider as AlertProvider} from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic';
 import { composeWithDevTools } from 'redux-devtools-extension';
-
-
-
+import Reservation from "./components/Reservation";
+import HotelPageOverviewWrapper from "./containers/HotelPageOverviewWrapper";
 
 const loggerMiddleware = createLogger()
 
@@ -54,6 +53,18 @@ const options = {
 
 window.addEventListener('load', () => {
 
+    if (document.getElementById('reservation')) {
+        render(
+            <Provider store={store}>
+                <HashRouter>
+                    <Switch>
+                        <Route path='/' component={Reservation}/>
+                    </Switch>
+                </HashRouter>
+            </Provider>,
+            document.getElementById('reservation')
+        )
+    }
     if (document.getElementById('hotel-description')) {
         render(
             <Provider store={store}>
@@ -114,18 +125,17 @@ window.addEventListener('load', () => {
         )
     }
 
-
-    if (document.getElementById('about-hotel')) {
+    if (document.getElementById('about-hotel-page')) {
         render(
             <Provider store={store}>
                 <HashRouter>
                     <Switch>
                         <Route path='/administration' component={HotelOverviewAdminWrapper}/>
-                        <Route path='/' component={HotelOverviewWrapper}/>
+                        <Route path='/' component={HotelPageOverviewWrapper}/>
                     </Switch>
                 </HashRouter>
             </Provider>,
-            document.getElementById('about-hotel')
+            document.getElementById('about-hotel-page')
         )
     }
 

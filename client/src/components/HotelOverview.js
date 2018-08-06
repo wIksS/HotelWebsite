@@ -27,6 +27,14 @@ class HotelOverview extends Component {
                 </div>);
         }
 
+        let info =[];
+        if(this.props.expanded){
+            info.push(<p className="mt-4">{this.props.hotelOverview.description}</p>);
+        }else{
+            info.push(<p className="mt-4">{this.props.hotelOverview.description.substring(0, 230)} <a
+                href="hotel.html" className="custom-rtl-link-fix" title="">(Вижте Повече...)</a></p>);
+        }
+
         return (
             <div className="react">
                 <h3 className="mt-4 mb-0 pb-0 text-uppercase">{HotelOverviewText}</h3>
@@ -34,8 +42,7 @@ class HotelOverview extends Component {
                     <hr className="mt-2 mr-auto"/>
                 </div>
 
-                <p className="mt-4">{this.props.hotelOverview.description.substring(0,230)} <a
-                        href="demo-hotel-hotel.html" className="custom-rtl-link-fix" title="">(Вижте Повече...)</a></p>
+                {info}
 
                 <div className="row">
                     {propertiesRows}

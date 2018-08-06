@@ -13,7 +13,7 @@ const mapStateToProps = (state, ownProps) => {
 
     return {
         hotelOverview: state.hotelOverview.hotelOverview,
-        expanded:false
+        expanded:true
     }
 }
 

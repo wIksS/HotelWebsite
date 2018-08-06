@@ -110,25 +110,25 @@
 														</a>
 													</li>
 													<li>
-														<a class="nav-link" href="demo-hotel-hotel.html">
+														<a class="nav-link" href="hotel.html">
 															Хотел
 														</a>
 													</li>
 													<li class="dropdown dropdown-full-color dropdown-primary  dropdown-mega-book-now">
-														<a class="nav-link dropdown-toggle" href="demo-hotel-special-offers.html">
+														<a class="nav-link dropdown-toggle" href="hotel-special-offers.html">
 															Стаи &amp; Цени
 														</a>
 														<ul class="dropdown-menu dropdown-mega dropdown-mega-book-now">
 															<li>
 																<div class="dropdown-mega-content">
-																	<a class="nav-link" href="demo-hotel-special-offers.html">
+																	<a class="nav-link" href="hotel-special-offers.html">
 																		Специялни оферти
 																	</a>
 																</div>
 															</li>
 															<li>
 																<div class="dropdown-mega-content">
-																	<a class="nav-link" href="demo-hotel-rooms-rates.html">
+																	<a class="nav-link" href="hotel-rooms-rates.html">
 																		Стаи &amp; Цени
 																	</a>
 																</div>
@@ -136,75 +136,25 @@
 														</ul>
 													</li>
 													<li>
-														<a class="nav-link" href="demo-hotel-house-rates.html">
+														<a class="nav-link" href="hotel-house-rates.html">
 															Къща за гости
 														</a>
 													</li>
 													<li>
-														<a class="nav-link" href="demo-hotel-location.html">
+														<a class="nav-link" href="hotel-location.html">
 															Местоположение
 														</a>
 													</li>
 													<li>
-														<a class="nav-link" href="demo-hotel-gallery.html">
+														<a class="nav-link" href="hotel-gallery.html">
 															Галерия
 														</a>
 													</li>
 													<li class="dropdown dropdown-full-color dropdown-primary dropdown-mega dropdown-mega-book-now" id="headerBookNow">
-														<a class="nav-link dropdown-toggle" href="demo-hotel-book.html">
+														<a class="nav-link dropdown-toggle" href="hotel-book.html">
 															Резервирай сега
 														</a>
-														<ul class="dropdown-menu">
-															<li>
-																<div class="dropdown-mega-content">
-																	<form id="bookFormHeader" action="demo-hotel-book.html" method="POST">
-																		<div class="form-row">
-																			<div class="form-group col">
-																				<div class="form-control-custom form-control-datepicker-custom">
-																					<input type="text" value="" class="form-control text-uppercase text-2" data-msg-required="This field is required." placeholder="Пристигане" name="bookNowArrivalHeader" id="bookNowArrivalHeader" required>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="form-row">
-																			<div class="form-group col">
-																				<div class="form-control-custom form-control-datepicker-custom">
-																					<input type="text" value="" class="form-control text-uppercase text-2" data-msg-required="This field is required." placeholder="Заминаване" name="bookNowDepartureHeader" id="bookNowDepartureHeader" required>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="form-row">
-																			<div class="form-group col-lg-6">
-																				<div class="form-control-custom">
-																					<select class="form-control text-uppercase text-2" name="bookNowAdults" data-msg-required="This field is required." id="bookNowAdults" required>
-																						<option value="">Възрастни</option>
-																						<option value="1">1</option>
-																						<option value="2">2</option>
-																						<option value="3">3</option>
-																						<option value="4">4</option>
-																					</select>
-																				</div>
-																			</div>
-																			<div class="form-group col-lg-6">
-																				<div class="form-control-custom">
-																					<select class="form-control text-uppercase text-2" name="bookNowKids" data-msg-required="This field is required." id="bookNowKids" required>
-																						<option value="">Деца</option>
-																						<option value="1">0</option>
-																						<option value="1">1</option>
-																						<option value="2">2</option>
-																						<option value="3">3</option>
-																						<option value="4">4</option>
-																					</select>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="form-row">
-																			<div class="form-group col mb-0">
-																				<input type="submit" value="Провери наличността" class="btn btn-secondary btn-lg btn-block text-uppercase text-2">
-																			</div>
-																		</div>
-																	</form>
-																</div>
-															</li>
+														<ul class="dropdown-menu" id="reservation">
 														</ul>
 													</li>
 												</ul>
@@ -227,28 +177,15 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 text-center">
-								<h1 class="font-weight-bold text-light text-uppercase">Локация на комплекса <span>в сърцето на розовата долина</span></h1>
+								<h1 class="font-weight-bold text-light text-uppercase">Резервирай сега <span>Направи своята резервация</span></h1>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<div class="macro-map clearfix">
-					<div class="macro-map-map">
-						<div id="googleMapsMacro" class="google-map m-0" style="height: 400px;"></div>
-					</div>
-					<div class="macro-map-info">
-						<div class="macro-map-info-detail">
-							<i class="icon-location-pin icons text-color-primary mt-3"></i>
-							<label>Адрес</label>
-							<strong>гр.Баня, област Карложо, ул.Лепите 22А</strong>
-						</div>
-						<div class="macro-map-info-detail">
-							<i class="icon-phone icons text-color-primary mt-3"></i>
-							<label>Обадете ни се</label>
-							<strong>(+359) 893491110</strong>
-						</div>
-					</div>
+				<div class="container" id="hotel-book">
+
+
 				</div>
 
 				<footer id="footer" class="color color-primary mt-0 pt-5 pb-5">
@@ -297,22 +234,22 @@
 						<nav id="sub-menu">
 							<ul>
 								<li>
-									<a href="demo-hotel-hotel.html">
+									<a href="hotel.html">
 										Хотел
 									</a>
 								</li>
 								<li>
-									<a href="demo-hotel-rooms-rates.html">
+									<a href="hotel-rooms-rates.html">
 										Стаи &amp; Цени
 									</a>
 								</li>
 								<li>
-									<a href="demo-hotel-house-rates.html">
+									<a href="hotel-house-rates.html">
 										Къща за гости
 									</a>
 								</li>
 								<li>
-									<a href="demo-hotel-location.html">
+									<a href="hotel-location.html">
 										Местоположение
 									</a>
 								</li>
@@ -362,73 +299,6 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
-
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7oJUYSBynHX9ziA0e1W-46RHRGpc6j3A"></script>
-		<script>
-            // Map Initial Location
-            var initLatitude = 42.5421619;
-            var initLongitude = 24.833241;
-
-			// Map Markers
-			var mapMarkers = [{
-                latitude: initLatitude,
-                longitude: initLongitude,
-				icon: {
-					image: "img/pin.png",
-					iconsize: [26, 46],
-					iconanchor: [12, 46]
-				}
-			}];
-
-
-
-			$('#googleMapsMacro').gMap({
-				controls: {
-					draggable: (($.browser.mobile) ? false : true),
-					panControl: true,
-					zoomControl: true,
-					mapTypeControl: true,
-					scaleControl: true,
-					streetViewControl: true,
-					overviewMapControl: true
-				},
-				scrollwheel: false,
-				markers: mapMarkers,
-				latitude: initLatitude,
-				longitude: initLongitude,
-				zoom: 13
-			});
-
-			$('#googleMapsMicro').gMap({
-				controls: {
-					draggable: false,
-					panControl: false,
-					zoomControl: false,
-					mapTypeControl: false,
-					scaleControl: false,
-					streetViewControl: false,
-					overviewMapControl: false
-				},
-				scrollwheel: false,
-				markers: mapMarkers,
-				latitude: initLatitude,
-				longitude: initLongitude,
-				zoom: 13
-			});
-
-			var mapRef = $('#googleMapsMacro, #googleMapsMicro').data('gMap.reference');
-
-			// Styles from https://snazzymaps.com/
-			var styles = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}];
-
-			var styledMap = new google.maps.StyledMapType(styles, {
-				name: 'Styled Map'
-			});
-
-			mapRef.mapTypes.set('map_style', styledMap);
-			mapRef.setMapTypeId('map_style');
-
-		</script>
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
 		<script>

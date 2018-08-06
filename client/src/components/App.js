@@ -13,7 +13,7 @@ class App extends Component {
         super();
     }
 
-    componentDidMount(){
+    componentDidMount() {
         window.reactReady();
     }
 
@@ -82,38 +82,38 @@ class App extends Component {
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a className="nav-link" href="demo-hotel-hotel.html">
+                                                                <a className="nav-link" href="hotel.html">
                                                                     Hotel
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a className="nav-link"
-                                                                   href="demo-hotel-rooms-rates.html">
+                                                                   href="hotel-rooms-rates.html">
                                                                     Rooms &amp; Rates
                                                                 </a>
                                                             </li>
                                                             <li>
                                                                 <a className="nav-link"
-                                                                   href="demo-hotel-special-offers.html">
+                                                                   href="hotel-special-offers.html">
                                                                     Special Offers
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a className="nav-link" href="demo-hotel-location.html">
+                                                                <a className="nav-link" href="hotel-location.html">
                                                                     Location
                                                                 </a>
                                                             </li>
                                                             <li className="dropdown dropdown-full-color dropdown-primary dropdown-mega dropdown-mega-book-now"
                                                                 id="headerBookNow">
                                                                 <a className="nav-link dropdown-toggle"
-                                                                   href="demo-hotel-book.html">
+                                                                   href="hotel-book.html">
                                                                     Book Now
                                                                 </a>
                                                                 <ul className="dropdown-menu">
                                                                     <li>
                                                                         <div className="dropdown-mega-content">
                                                                             <form id="bookFormHeader"
-                                                                                  action="demo-hotel-book.html"
+                                                                                  action="hotel-book.html"
                                                                                   method="POST">
                                                                                 <div className="form-row">
                                                                                     <div className="form-group col">
@@ -254,7 +254,8 @@ class App extends Component {
                                         <Provider store={store}>
                                             <BrowserRouter>
                                                 <Switch>
-                                                    <Route path='/administration' component={HotelDescriptionAdminWrapper}/>
+                                                    <Route path='/administration'
+                                                           component={HotelDescriptionAdminWrapper}/>
                                                     <Route path='/' component={HotelDescriptionWrapper}/>
                                                 </Switch>
                                             </BrowserRouter>
@@ -271,7 +272,7 @@ class App extends Component {
                                                     <i className="icon-location-pin icons text-color-primary"/>
                                                     <label>address</label>
                                                     <strong>1234 Street Name, Porto, Envato</strong>
-                                                    <a href="demo-hotel-location.html" title>(View Location)</a>
+                                                    <a href="hotel-location.html" title>(View Location)</a>
                                                 </div>
                                                 <div className="micro-map-info-detail">
                                                     <i className="icon-phone icons text-color-primary"/>
@@ -295,7 +296,7 @@ class App extends Component {
                                         <p className="lead text-light mb-4">Make your reservation right now with the
                                             best price</p>
                                         <a className="btn btn-primary btn-lg text-2 text-uppercase mt-2"
-                                           href="demo-hotel-book.html">Book Now</a>
+                                           href="hotel-book.html">Book Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -320,7 +321,8 @@ class App extends Component {
                                         <Provider store={store}>
                                             <BrowserRouter>
                                                 <Switch>
-                                                    <Route path='/administration' component={HotelOverviewAdminWrapper}/>
+                                                    <Route path='/administration'
+                                                           component={HotelOverviewAdminWrapper}/>
                                                     <Route path='/' component={HotelOverviewWrapper}/>
                                                 </Switch>
                                             </BrowserRouter>
@@ -469,7 +471,7 @@ class App extends Component {
                                             </div>
                                         </div>
                                         <a className="btn btn-primary btn-lg text-2 text-uppercase mt-2"
-                                           href="demo-hotel-special-offers.html">View All</a>
+                                           href="hotel-special-offers.html">View All</a>
                                     </div>
                                 </div>
                             </div>
@@ -568,22 +570,22 @@ class App extends Component {
                                 <nav id="sub-menu">
                                     <ul>
                                         <li>
-                                            <a href="demo-hotel-hotel.html">
+                                            <a href="hotel.html">
                                                 Hotel
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="demo-hotel-rooms-rates.html">
+                                            <a href="hotel-rooms-rates.html">
                                                 Rooms &amp; Rates
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="demo-hotel-special-offers.html">
+                                            <a href="hotel-special-offers.html">
                                                 Special Offers
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="demo-hotel-location.html">
+                                            <a href="hotel-location.html">
                                                 Location
                                             </a>
                                         </li>
