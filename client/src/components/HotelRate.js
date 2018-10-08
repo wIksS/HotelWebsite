@@ -17,7 +17,7 @@ class HotelRate extends Component {
 
         return (
             <div className="col-md-6 col-lg-4 isotope-item rooms mb-4 pb-3">
-                <a href={this.props.detailsUrl + this.props.hotelRateKey}>
+                <a href={this.props.detailsUrl + '/' + this.props.hotelRateKey}>
                   <span
                       className="thumb-info thumb-info-centered-info thumb-info-no-borders">
                     <span className="thumb-info-wrapper">

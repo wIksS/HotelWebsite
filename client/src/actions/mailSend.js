@@ -23,7 +23,7 @@ export function sendMail(mailData) {
     return dispatch => {
         dispatch(requestMail());
 
-        return fetch(`/api/sendMail`,{
+        return fetch(`http://185.80.1.67:8080/api/sendMail`,{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

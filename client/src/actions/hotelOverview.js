@@ -25,7 +25,7 @@ export function fetchHotelOverview() {
     return dispatch => {
         dispatch(requestHotelOverview());
 
-        return fetch(`/api/hotelOverview`)
+        return fetch(`http://185.80.1.67:8080/api/hotelOverview`)
             .then(
                 response => response.json(),
                 error => console.log('An error occurred.', error)
@@ -36,7 +36,7 @@ export function fetchHotelOverview() {
 
 export function postHotelOverview(hotelDescription) {
     return dispatch => {
-        return fetch(`/api/hotelOverview`,{
+        return fetch(`http://185.80.1.67:8080/api/hotelOverview`,{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
