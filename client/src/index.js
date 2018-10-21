@@ -13,7 +13,6 @@ import HotelDescriptionAdminWrapper from "./containers/HotelDescriptionAdminWrap
 import HotelDescriptionWrapper from "./containers/HotelDescriptionWrapper";
 import HotelOverviewAdminWrapper from "./containers/HotelOverviewAdminWrapper";
 import HotelOverviewWrapper from "./containers/HotelOverviewWrapper";
-import HotelOverviewNavWrapper from "./containers/HotelOverviewNavWrapper";
 import HotelRatesWrapper from "./containers/HotelRatesWrapper";
 import HotelRatesAdminWrapper from "./containers/HotelRatesAdminWrapper";
 import {fetchHotelRates} from "./actions/hotelRates";
@@ -137,20 +136,6 @@ window.addEventListener('load', () => {
                 </HashRouter>
             </Provider>,
             document.getElementById('about-hotel-page')
-        )
-    }
-
-    if (document.getElementById('about-hotel-page-nav')) {
-        render(
-            <Provider store={store}>
-                <HashRouter>
-                    <Switch>
-                        {/* <Route path='/administration' component={HotelOverviewAdminWrapper}/> */}
-                        <Route path='/' component={HotelPageOverviewNavWrapper}/>
-                    </Switch>
-                </HashRouter>
-            </Provider>,
-            document.getElementById('about-hotel-page-nav')
         )
     }
 

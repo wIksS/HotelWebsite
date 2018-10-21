@@ -222,7 +222,7 @@
 
 								<div class="micro-map box-shadow-custom clearfix">
 									<div class="micro-map-map">
-										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47054.96336352247!2d24.811590042866836!3d42.514184815875915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46e07ba781155723!2z0JHQsNC60LDQu9C-0LIgLSAyMDAyINCV0J7QntCU!5e0!3m2!1sbg!2sbg!4v1538817705663" width="150" height="350" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+										<div id="googleMapsMicro" class="google-map m-0" style="height: 280px;"></div>
 									</div>
 									<div class="micro-map-info">
 										<div class="micro-map-info-detail">
@@ -457,6 +457,73 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7oJUYSBynHX9ziA0e1W-46RHRGpc6j3A"></script>
+		<script>
+            // Map Initial Location
+            var initLatitude = 42.5421619;
+            var initLongitude = 24.833241;
+
+			// Map Markers
+			var mapMarkers = [{
+                latitude: initLatitude,
+                longitude: initLongitude,
+				icon: {
+					image: "img/pin.png",
+					iconsize: [26, 46],
+					iconanchor: [12, 46]
+				}
+			}];
+
+
+
+			$('#googleMapsMacro').gMap({
+				controls: {
+					draggable: (($.browser.mobile) ? false : true),
+					panControl: true,
+					zoomControl: true,
+					mapTypeControl: true,
+					scaleControl: true,
+					streetViewControl: true,
+					overviewMapControl: true
+				},
+				scrollwheel: false,
+				markers: mapMarkers,
+				latitude: initLatitude,
+                latitude: initLongitude,
+				zoom: 13
+			});
+
+			$('#googleMapsMicro').gMap({
+				controls: {
+					draggable: false,
+					panControl: false,
+					zoomControl: false,
+					mapTypeControl: false,
+					scaleControl: false,
+					streetViewControl: false,
+					overviewMapControl: false
+				},
+				scrollwheel: false,
+				markers: mapMarkers,
+				latitude: initLatitude,
+				longitude: initLongitude,
+				zoom: 13
+			});
+
+			var mapRef = $('#googleMapsMacro, #googleMapsMicro').data('gMap.reference');
+
+			// Styles from https://snazzymaps.com/
+			var styles = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}];
+
+			var styledMap = new google.maps.StyledMapType(styles, {
+				name: 'Styled Map'
+			});
+
+			mapRef.mapTypes.set('map_style', styledMap);
+			mapRef.setMapTypeId('map_style');
+
+		</script>
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
 		<script>

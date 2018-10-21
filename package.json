@@ -4,19 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "client-install": "npm install --prefix client",
+    "dev": "nodemon server.js",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "npm run dev && cd client && npm start",
-    "server": "nodemon server.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "npm run dev && cd client && npm start"
   },
   "author": "Viktor Dakov",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
     "body-parser": "^1.18.2",
-    "concurrently": "^4.0.1",
     "express": "^4.16.3",
     "guid": "0.0.12",
     "mongoose": "^5.0.12",
