@@ -33,7 +33,7 @@ class HotelRate extends Component {
                     <ul>
                         {propertiesHtml}
                         <li>
-                            <a href="hotel-house-rates-detail.html"
+                            <a href={this.props.detailsUrl + '/' + this.props.hotelRateKey}
                                className="room-suite-info-detail" title>Вижте повече <i
                                 className="fas fa-long-arrow-alt-right"/></a>
                             <a href="hotel-book.html" className="room-suite-info-book" title>Резервирайте сега</a>

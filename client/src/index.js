@@ -28,6 +28,7 @@ import AlertTemplate from 'react-alert-template-basic';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import Reservation from "./components/Reservation";
 import HotelPageOverviewWrapper from "./containers/HotelPageOverviewWrapper";
+import HotelRatesDetailAdminWrapper from "./containers/HotelRatesDetailAdminWrapper";
 
 const loggerMiddleware = createLogger()
 
@@ -101,7 +102,7 @@ window.addEventListener('load', () => {
                 <HashRouter>
                     <Switch>
                         <Route path='/administration' component={HotelRatesAdminWrapper}/>
-                        <Route path='/details/:id/administration' component={HotelHouseRatesDetailAdminWrapper}/>
+                        <Route path='/details/:id/administration' component={HotelRatesDetailAdminWrapper}/>
                         <Route path='/details/:id' component={HotelRateDetailWrapper}/>
                         <Route path='/' component={HotelRatesWrapper}/>
                     </Switch>
