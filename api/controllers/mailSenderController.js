@@ -21,7 +21,7 @@ exports.send_mail = function (req, res) {
         // setup email data with unicode symbols
         let mailOptions = {
             from: 'bakalov2002.service@gmail.com', // sender address
-            to: ['bakalov2002@gmail.com','tdd@dekom.bg','viktordakov97@gmail.com'], // list of receivers
+            to: ['jjilkov@gmail.com','bakalov2002@gmail.com','tdd@dekom.bg','viktordakov97@gmail.com'], // list of receivers
             subject: 'Запитване за стая', // Subject line
             html: '<div style="font-size:17px"><p>Тип стая: <strong>' + room.title + '</strong></p>' +
             '<p>Пристигане: <strong>' + req.body.arriveDate + '</strong></p>' +
