@@ -74,11 +74,6 @@ export default class Login extends React.Component {
                             <input type="password" id="password" onChange={this.changePassword.bind(this)}
                                    className="form-control" placeholder="Password"
                                    required/>
-                            <div className="checkbox">
-                                <label>
-                                    <input type="checkbox" defaultValue="remember-me"/> Remember me
-                                </label>
-                            </div>
                             <br/>
                             <button className="btn btn-lg btn-primary btn-block" onClick={this.login.bind(this)}
                                     type="submit">Sign in

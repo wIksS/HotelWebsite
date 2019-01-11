@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b673459-c4df-43ae-9b15-8a9ee88963ee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/helpers/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/helpers/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/authentication.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -88,8 +90,8 @@
       <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="405">
+              <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -101,7 +103,16 @@
         <entry file="file://$PROJECT_DIR$/client/src/helpers/constants.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -109,8 +120,8 @@
       <file leaf-file-name="authentication.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helpers/authentication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -129,15 +140,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Navigation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/components/Navigation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -270,11 +272,11 @@
         <option value="$PROJECT_DIR$/api/routes/authenticationRoutes.js" />
         <option value="$PROJECT_DIR$/api/controllers/authenticationController.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/helpers/authentication.js" />
         <option value="$PROJECT_DIR$/client/src/helpers/PrivateRoute.js" />
         <option value="$PROJECT_DIR$/client/src/helpers/Authentication.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Login.js" />
         <option value="$PROJECT_DIR$/client/public/css/custom.css" />
+        <option value="$PROJECT_DIR$/helpers/authentication.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Login.js" />
         <option value="$PROJECT_DIR$/client/src/helpers/constants.js" />
       </list>
     </option>
@@ -382,7 +384,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="webpack&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/node_modules/react-scripts/config/webpack.config.dev.js&#10;web&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/node_modules/react-scripts/config/webpack.config.dev.js&#10;webp&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/node_modules/react-scripts/config/webpack.config.dev.js&#10;HotelOverviewAdmin&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/src/components/HotelOverviewAdmin.js&#10;HotelDescriptionAdmin&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/src/components/HotelDescriptionAdmin.js&#10;hotelDes&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/src/components/HotelDescriptionAdmin.js&#10;webpack.config.dev.js&#9;FILE&#9;file://D:/bakalov/hotel/client/node_modules/react-scripts/config/webpack.config.dev.js&#10;webpack-&#9;FILE&#9;file://D:/bakalov/hotel/client/node_modules/webpack-dev-server/bin/webpack-dev-server.js" />
+    <property name="SearchEverywhereHistoryKey" value="login&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/src/components/Login.js&#10;webpack&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/node_modules/react-scripts/config/webpack.config.dev.js&#10;web&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/node_modules/react-scripts/config/webpack.config.dev.js&#10;webp&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/node_modules/react-scripts/config/webpack.config.dev.js&#10;HotelOverviewAdmin&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/src/components/HotelOverviewAdmin.js&#10;HotelDescriptionAdmin&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/src/components/HotelDescriptionAdmin.js&#10;hotelDes&#9;FILE&#9;file:///Users/viktordakov/Desktop/bakalov_hotel_react/client/src/components/HotelDescriptionAdmin.js&#10;webpack.config.dev.js&#9;FILE&#9;file://D:/bakalov/hotel/client/node_modules/react-scripts/config/webpack.config.dev.js&#10;webpack-&#9;FILE&#9;file://D:/bakalov/hotel/client/node_modules/webpack-dev-server/bin/webpack-dev-server.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -556,12 +558,12 @@
       <workItem from="1547223592130" duration="1678000" />
       <workItem from="1547225404599" duration="1151000" />
       <workItem from="1547227227329" duration="1440000" />
-      <workItem from="1547245762002" duration="142000" />
+      <workItem from="1547245762002" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97744000" />
+    <option name="totallyTimeSpent" value="98200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="801" extended-state="0" />
@@ -849,13 +851,6 @@
     <entry file="file://$PROJECT_DIR$/client/src/containers/HotelDescriptionAdminWrapper.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/containers/HotelHouseRatesDetailAdminWrapper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -888,13 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/authentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -936,10 +924,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/authentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="405">
+          <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -949,7 +951,7 @@
     <entry file="file://$PROJECT_DIR$/client/src/helpers/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
