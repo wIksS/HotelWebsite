@@ -1,5 +1,6 @@
 import 'babel-polyfill'
 import fetch from 'cross-fetch'
+import {BaseUrl} from "../helpers/constants";
 export const REQUEST_MAIL = 'REQUEST_MAIL';
 function requestMail() {
     return {
@@ -23,7 +24,7 @@ export function sendMail(mailData) {
     return dispatch => {
         dispatch(requestMail());
 
-        return fetch(`http://185.80.1.67:8080/api/sendMail`,{
+        return fetch(BaseUrl + '/api/sendMail',{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

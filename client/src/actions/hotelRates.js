@@ -1,5 +1,6 @@
 import 'babel-polyfill'
 import fetch from 'cross-fetch'
+import {BaseUrl} from "../helpers/constants";
 export const REQUEST_HOTEL_RATES = 'REQUEST_HOTEL_RATES';
 function requestHotelRates() {
     return {
@@ -23,7 +24,7 @@ export function fetchHotelRates() {
     return dispatch => {
         dispatch(requestHotelRates());
 
-        return fetch(`http://185.80.1.67:8080/api/hotelRates`)
+        return fetch(BaseUrl + '/api/hotelRates')
             .then(
                 response => response.json(),
                 error => console.log('An error occurred.', error)
@@ -34,7 +35,7 @@ export function fetchHotelRates() {
 
 export function postHotelRates(hotelRates) {
     return dispatch => {
-        return fetch(`http://185.80.1.67:8080/api/hotelRates`,{
+        return fetch(BaseUrl + '/api/hotelRates',{
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
@@ -52,7 +53,7 @@ export function postHotelRates(hotelRates) {
 
 export function addHotelRates(hotelRates) {
     return dispatch => {
-        return fetch(`http://185.80.1.67:8080/api/hotelRates`,{
+        return fetch(BaseUrl + '/api/hotelRates',{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -70,7 +71,7 @@ export function addHotelRates(hotelRates) {
 
 export function deleteHotelRates(hotelRates) {
     return dispatch => {
-        return fetch(`http://185.80.1.67:8080/api/hotelRates`,{
+        return fetch(BaseUrl + '/api/hotelRates',{
             method: 'DELETE',
             headers: {
                 'Accept': 'application/json',

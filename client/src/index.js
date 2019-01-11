@@ -30,6 +30,11 @@ import Reservation from "./components/Reservation";
 import HotelPageOverviewWrapper from "./containers/HotelPageOverviewWrapper";
 import HotelRatesDetailAdminWrapper from "./containers/HotelRatesDetailAdminWrapper";
 
+import Cookies from 'universal-cookie';
+import Login from "./components/Login";
+import {PrivateRoute} from "./helpers/PrivateRoute";
+const cookies = new Cookies();
+
 const loggerMiddleware = createLogger()
 
 const store = createStore(app, composeWithDevTools(
@@ -59,6 +64,7 @@ window.addEventListener('load', () => {
             <Provider store={store}>
                 <HashRouter>
                     <Switch>
+                        <Route path="/login" component={Login} />
                         <Route path='/' component={Reservation}/>
                     </Switch>
                 </HashRouter>
@@ -71,7 +77,8 @@ window.addEventListener('load', () => {
             <Provider store={store}>
                 <HashRouter>
                     <Switch>
-                        <Route path='/administration' component={HotelDescriptionAdminWrapper}/>
+                        <PrivateRoute path='/administration' component={HotelDescriptionAdminWrapper}/>
+                        <Route path="/login" component={Login} />
                         <Route path='/' component={HotelDescriptionWrapper}/>
                     </Switch>
                 </HashRouter>
@@ -85,9 +92,10 @@ window.addEventListener('load', () => {
             <Provider store={store}>
                 <HashRouter>
                     <Switch>
-                        <Route path='/administration' component={HotelHouseRatesAdminWrapper}/>
-                        <Route path='/details-house/:id/administration' component={HotelHouseRatesDetailAdminWrapper}/>
+                        <PrivateRoute path='/administration' component={HotelHouseRatesAdminWrapper}/>
+                        <PrivateRoute path='/details-house/:id/administration' component={HotelHouseRatesDetailAdminWrapper}/>
                         <Route path='/details-house/:id' component={HotelHouseRateDetailWrapper}/>
+                        <Route path="/login" component={Login} />
                         <Route path='/' component={HotelHouseRatesWrapper}/>
                     </Switch>
                 </HashRouter>
@@ -101,9 +109,10 @@ window.addEventListener('load', () => {
             <Provider store={store}>
                 <HashRouter>
                     <Switch>
-                        <Route path='/administration' component={HotelRatesAdminWrapper}/>
+                        <PrivateRoute path='/administration' component={HotelRatesAdminWrapper}/>
                         <Route path='/details/:id/administration' component={HotelRatesDetailAdminWrapper}/>
                         <Route path='/details/:id' component={HotelRateDetailWrapper}/>
+                        <Route path="/login" component={Login} />
                         <Route path='/' component={HotelRatesWrapper}/>
                     </Switch>
                 </HashRouter>
@@ -117,7 +126,8 @@ window.addEventListener('load', () => {
             <Provider store={store}>
                 <HashRouter>
                     <Switch>
-                        <Route path='/administration' component={HotelOverviewAdminWrapper}/>
+                        <PrivateRoute path='/administration' component={HotelOverviewAdminWrapper}/>
+                        <Route path="/login" component={Login} />
                         <Route path='/' component={HotelOverviewWrapper}/>
                     </Switch>
                 </HashRouter>
@@ -131,7 +141,8 @@ window.addEventListener('load', () => {
             <Provider store={store}>
                 <HashRouter>
                     <Switch>
-                        <Route path='/administration' component={HotelOverviewAdminWrapper}/>
+                        <PrivateRoute path='/administration' component={HotelOverviewAdminWrapper}/>
+                        <Route path="/login" component={Login} />
                         <Route path='/' component={HotelPageOverviewWrapper}/>
                     </Switch>
                 </HashRouter>
@@ -146,6 +157,7 @@ window.addEventListener('load', () => {
                 <Provider store={store}>
                     <HashRouter>
                         <Switch>
+                            <Route path="/login" component={Login} />
                             <Route path='/' component={HotelBookWrapper}/>
                         </Switch>
                     </HashRouter>

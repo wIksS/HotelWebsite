@@ -1,5 +1,6 @@
 import 'babel-polyfill'
 import fetch from 'cross-fetch'
+import {BaseUrl} from "../helpers/constants";
 
 export const REQUEST_HOTEL_DESCRIPTION = 'REQUEST_HOTEL_DESCRIPTION';
 function requestHotelDescription() {
@@ -24,7 +25,7 @@ export function fetchHotelDescription() {
     return dispatch => {
         dispatch(requestHotelDescription());
 
-        return fetch(`http://185.80.1.67:8080/api/hotelDescription`)
+        return fetch(BaseUrl + '/api/hotelDescription')
             .then(
                 response => response.json(),
                 error => console.log('An error occurred.', error)
@@ -35,7 +36,7 @@ export function fetchHotelDescription() {
 
 export function postHotelDescription(hotelDescription) {
     return dispatch => {
-        return fetch(`http://185.80.1.67:8080/api/hotelDescription`,{
+        return fetch(BaseUrl + '/api/hotelDescription',{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

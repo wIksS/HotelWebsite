@@ -1,7 +1,9 @@
+// const BasicStrategy = "passport-http";
+// const passport ="passport";
 
 const express = require('express');
 const mongoose = require('mongoose');
-const bodyParser= require('body-parser');
+const bodyParser = require('body-parser');
 
 const autoIncrement = require('mongoose-auto-increment');
 let db = mongoose.connection;
@@ -17,19 +19,19 @@ var uri = 'mongodb://127.0.0.1:27017/balkalov_hotel';
 var options = {
     user: "master",
     pass: "b@k@l0v",
-    auth: { authDb: 'admin' },
+    auth: {authDb: 'admin'},
     useMongoClient: true
-    };
+};
 
-// mongoose.connect('mongodb://admin:qwerty123456@ds131989.mlab.com:31989/bakalov_hotel',  {useNewUrlParser: true})
-mongoose.connect(uri)
-    .then(function (data) {
-        console.log('Dadatabase connected!');
-        require('./seed');
-    }, function (err) {
-        console.log('Dadatabase connection error: ',err);
-
-    });
+mongoose.connect('mongodb://admin:qwerty123456@ds131989.mlab.com:31989/bakalov_hotel', {useNewUrlParser: true})
+// mongoose.connect(uri)
+//     .then(function (data) {
+//         console.log('Dadatabase connected!');
+//         require('./seed');
+//     }, function (err) {
+//         console.log('Dadatabase connection error: ', err);
+//
+//     });
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
@@ -40,7 +42,9 @@ app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     res.setHeader('Access-Control-Allow-Credentials', true);
     next();
-    });
+});
+
+
 app.use(bodyParser.json());
 
 const port = process.env.PORT || 8080;
@@ -51,13 +55,15 @@ const hotelOverviewRoutes = require('./api/routes/hotelOverviewRoutes');
 const hotelRatesRoutes = require('./api/routes/hotelRatesRoutes');
 const hotelHouseRatesRoutes = require('./api/routes/hotelHouseRatesRoutes');
 const mailSenderRoutes = require('./api/routes/mailSenderRoutes');
+const authenticationRoutes = require('./api/routes/authenticationRoutes');
 
 hotelDescriptionRoutes(app);
 hotelOverviewRoutes(app);
 hotelRatesRoutes(app);
 hotelHouseRatesRoutes(app);
 mailSenderRoutes(app);
+authenticationRoutes(app);
 
-//app.listen(port, () => console.log(`Listening on port ${port}`));
-var server = http.createServer(app);
-server.listen(8080, "185.80.1.67"); 
+app.listen(port, () => console.log(`Listening on port ${port}`));
+//var server = http.createServer(app);
+//server.listen(8080, "185.80.1.67");

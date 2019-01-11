@@ -1,5 +1,7 @@
 import 'babel-polyfill'
 import fetch from 'cross-fetch'
+import {BaseUrl} from "../helpers/constants";
+
 export const REQUEST_HOTEL_HOUSE_RATES = 'REQUEST_HOTEL_HOUSE_RATES';
 function requestHotelHouseRates() {
     return {
@@ -23,7 +25,7 @@ export function fetchHotelHouseRates() {
     return dispatch => {
         dispatch(requestHotelHouseRates());
 
-        return fetch(`http://185.80.1.67:8080/api/hotelHouseRates`)
+        return fetch(BaseUrl + '/api/hotelHouseRates')
             .then(
                 response => response.json(),
                 error => console.log('An error occurred.', error)
@@ -34,7 +36,7 @@ export function fetchHotelHouseRates() {
 
 export function postHotelHouseRates(hotelRates) {
     return dispatch => {
-        return fetch(`http://185.80.1.67:8080/api/hotelHouseRates`,{
+        return fetch(BaseUrl + '/api/hotelHouseRates',{
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
@@ -52,7 +54,7 @@ export function postHotelHouseRates(hotelRates) {
 
 export function addHotelHouseRates(hotelRates) {
     return dispatch => {
-        return fetch(`http://185.80.1.67:8080/api/hotelHouseRates`,{
+        return fetch(BaseUrl + '/api/hotelHouseRates',{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -70,7 +72,7 @@ export function addHotelHouseRates(hotelRates) {
 
 export function deleteHotelHouseRates(hotelRates) {
     return dispatch => {
-        return fetch(`http://185.80.1.67:8080/api/hotelHouseRates`,{
+        return fetch(BaseUrl + '/api/hotelHouseRates',{
             method: 'DELETE',
             headers: {
                 'Accept': 'application/json',
