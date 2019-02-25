@@ -10,6 +10,7 @@ class HotelRateAdmin extends Component {
             title: this.props.hotelRates.title,
             properties: this.props.hotelRates.properties,
             url: this.props.hotelRates.url,
+            images:this.props.hotelRates.images,
             description: this.props.hotelRates.description,
             _id:this.props.hotelRates._id
         };
@@ -17,6 +18,10 @@ class HotelRateAdmin extends Component {
         this.handleInputChange = inputChangeHandler.bind(this);
         this.handleSubmit = submitHandler.bind(this);
         this.handlePropertyChange = this.handlePropertyChange.bind(this);
+
+    }
+
+    handleSubmit(event){
 
     }
 
@@ -68,7 +73,6 @@ class HotelRateAdmin extends Component {
             window.imageEvent[this.state._id].initEvent('imageReady' + this.state._id, true, true);
 
             window.addEventListener('imageReady' + this.state._id, function (e) {
-                debugger;
                 self.setState({
                     url: 'https://res.cloudinary.com/df3euu0sz/image/upload/v1532481656/' + e.data[0].public_id
                 })

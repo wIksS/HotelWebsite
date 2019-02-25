@@ -33,7 +33,7 @@ exports.update_hotel_rates = function (req, res) {
 
 exports.add_hotel_rate = function (req, res) {
     let newHotelRate = new HotelRates(req.body);
-
+    console.log(newHotelRate);
     newHotelRate.save(function (err, data) {
         if(err) {
             res.send(err);

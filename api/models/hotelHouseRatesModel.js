@@ -16,6 +16,10 @@ var HotelHouseRatesSchema = new Schema({
         type: String,
         required: "This field is required"
     },
+    images:{
+        type:Array,
+        required: "This field is required"
+    },
     description: {
         type: String,
         required: "This field is required"

@@ -11,7 +11,7 @@ class HotelRateDetail extends Component {
     render() {
         let hotelRate = this.props.hotelRates[this.props.match.params.id];
         if(!hotelRate){
-            hotelRate={properties:[]};
+            hotelRate={properties:[], images:[]};
         }
 
         let propertiesHtml = [];
@@ -20,6 +20,15 @@ class HotelRateDetail extends Component {
                 <span>{hotelRate.properties[i].value}</span></li>);
         }
 
+
+        let imagesHtml = [];
+        for (let i=0;i<hotelRate.images.length;i++){
+            imagesHtml.push(
+                <div>
+                    <img src={hotelRate.images[i]} className="img-fluid" alt=""/>
+                </div>
+            );
+        }
         return (
             <section className="section section-no-background section-no-border m-0 p-0">
                 <div className="container">
@@ -43,9 +52,12 @@ class HotelRateDetail extends Component {
                                 </div>
                                 <div className="col-lg-5">
                                     <div className="">
-                                        <div>
-                                            <img src={hotelRate.url} className="img-fluid" alt />
+                                        <div className="owl-carousel owl-theme nav-inside box-shadow-custom mt-4"
+                                             data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 3000}">
+
+                                            {imagesHtml}
                                         </div>
+
                                     </div>
                                 </div>
                             </div>

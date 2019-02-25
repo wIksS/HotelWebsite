@@ -19,17 +19,25 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         onSubmit: (hotelRates) => {
+            hotelRates = updateImages(hotelRates);
             dispatch(postHotelRates(hotelRates))
         },
         onAddRate: (hotelRates) => {
+            hotelRates = updateImages(hotelRates);
             dispatch(addHotelRates(hotelRates))
         },
         onDeleteRate: (hotelRates) => {
+            hotelRates = updateImages(hotelRates);
             dispatch(deleteHotelRates(hotelRates))
         }
     }
 }
 
+function updateImages(hotelRates) {
+    hotelRates.images = hotelRates.images || [""];
+    hotelRates.images[0] = hotelRates.url;
+    return hotelRates;
+}
 
 export default connect(
     mapStateToProps,
