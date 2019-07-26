@@ -298,9 +298,8 @@ class HotelBook extends Component {
                                     <div className="form-group">
                                         <div><label htmlFor="agree">Съгласие за обработка на лични данни</label></div>
                                         <input name="agree" id="agree" type="checkbox"
-                                               onChange={this.handleInputChange}/> Прочетох и разбрах
-                                        записаното в Общите условия за ползване на сайта. Потвърждавам, че съм
-                                        съгласен/на личните ми данни да бъдат обработвани.
+                                               onChange={this.handleInputChange}/>
+                                               <a href="/content/Agreements.pdf#/" target="_blank">&nbsp;&nbsp;Прочетох и разбрах записаното в Общите условия за ползване на сайта. Потвърждавам, че съм съгласен/на личните ми данни да бъдат обработвани.</a>
                                     </div>
                                 </div>
                             </div>
