@@ -602,7 +602,7 @@ html:not(.sticky-header-active) #header.header-transparent-sticky-deactive.heade
 	}
 
 	#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a:hover, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a:focus, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a.active, #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li a:active {
-		background-color: #f8f9fa;
+		background-color: #d8a64f;
 	}
 
 	#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.dropdown-submenu {
