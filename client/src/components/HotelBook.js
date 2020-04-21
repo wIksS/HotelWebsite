@@ -65,10 +65,22 @@ class HotelBook extends Component {
             this.props.alert.error('Моля съгласете се с общите условия');
             isValid = false;
         }
-        // if(!this.state.isArriveSelected || !this.state.isDepartureSelected){
-        //     this.props.alert.error('Моля изберете начална и крайна дата');
-        //     isValid= false;
-        // }
+        else if(!this.state.name){
+            this.props.alert.error('Моля добавете име за контакт');
+            isValid = false;
+        }
+        else if(!this.state.adults){
+            this.props.alert.error('Моля изберете брой възрастни');
+            isValid = false;
+        }
+        else if(this.state.kids == 0){
+            this.props.alert.error('Моля изберете брой деца');
+            isValid = false;
+        }
+        else if(!this.state.isArriveSelected || !this.state.isDepartureSelected){
+            this.props.alert.error('Моля изберете начална и крайна дата');
+            isValid= false;
+        }
 
         if (isValid) {
             this.props.onSubmit(this.state);
@@ -225,7 +237,8 @@ class HotelBook extends Component {
                                         <select className="form-control text-uppercase text-2" name="kids"
                                                 id="kids"
                                                 onChange={this.handleInputChange} value={this.state.kids}>
-                                            <option value>Деца</option>
+                                            <option value={0}>Деца</option>
+                                            <option value={-1}>0</option>
                                             <option value={1}>1</option>
                                             <option value={2}>2</option>
                                             <option value={3}>3</option>
@@ -271,7 +284,7 @@ class HotelBook extends Component {
                             <div className="form-row">
                                 <div className="form-group col">
                                     <label htmlFor="phone" className="form-control-label">Телефон за контакт</label>
-                                    <input type="number" placeholder={'088 888 888'} onChange={this.handleInputChange}
+                                    <input type="phone" placeholder={'088 888 888'} onChange={this.handleInputChange}
                                            value={this.state.phone}
                                            className="form-control" id="phone"
                                            name="phone"/>

@@ -13,6 +13,8 @@ var _crossFetch = require('cross-fetch');
 
 var _crossFetch2 = _interopRequireDefault(_crossFetch);
 
+var _constants = require('../helpers/constants');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var REQUEST_HOTEL_DESCRIPTION = exports.REQUEST_HOTEL_DESCRIPTION = 'REQUEST_HOTEL_DESCRIPTION';
@@ -38,7 +40,7 @@ function fetchHotelDescription() {
     return function (dispatch) {
         dispatch(requestHotelDescription());
 
-        return (0, _crossFetch2.default)('/api/hotelDescription').then(function (response) {
+        return (0, _crossFetch2.default)(_constants.BaseUrl + '/api/hotelDescription').then(function (response) {
             return response.json();
         }, function (error) {
             return console.log('An error occurred.', error);
@@ -50,7 +52,7 @@ function fetchHotelDescription() {
 
 function postHotelDescription(hotelDescription) {
     return function (dispatch) {
-        return (0, _crossFetch2.default)('/api/hotelDescription', {
+        return (0, _crossFetch2.default)(_constants.BaseUrl + '/api/hotelDescription', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

@@ -1,0 +1,1 @@
+D:\Bakalov2002\CurrentSite\hotel\HotelWebsite\client\node_modules\react-scripts\config
