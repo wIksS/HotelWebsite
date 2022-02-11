@@ -37,7 +37,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "ajv": "^6.5.3",
+    "ajv": "^6.12.3",
     "redux-devtools-extension": "^2.13.5"
   },
   "browserslist": [
